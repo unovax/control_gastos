@@ -1,2 +1,2 @@
-const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/controlgastos', { useNewUrlParser: true, useUnifiedTopology: true });
+import mongoose from 'mongoose';
+mongoose.connect('mongodb://localhost/controlgastos');
