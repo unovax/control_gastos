@@ -1,11 +1,14 @@
-
+// En index.js
 import express from 'express';
 import cors from 'cors';
 import apiRoutes from './routes/index.js';
-import './db.js';
+import { PORT, mongoDBURL, mongoDBName } from './config.js';
+import { connectToDatabase } from './database.js';
+
+
+connectToDatabase(mongoDBURL + mongoDBName);
 
 const app = express();
-const PORT = process.env.PORT || 5000;
 
 // Configuraciones y middleware
 app.use(cors());
@@ -18,3 +21,4 @@ app.use('/api', apiRoutes);
 app.listen(PORT, () => {
   console.log(`Servidor en ejecución en http://localhost:${PORT}`);
 });
+
