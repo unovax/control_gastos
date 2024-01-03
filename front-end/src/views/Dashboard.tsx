@@ -1,9 +1,14 @@
 import React from 'react';
-
+import Topbar from '../components/Topbar';
 const Dashboard: React.FC = () => {
     return (
         <div>
-            sasdas
+            <Topbar>
+                
+            </Topbar>
+            <div>
+                <h1>Dashboard</h1>
+            </div>
         </div>
     );
 };

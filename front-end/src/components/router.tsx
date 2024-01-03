@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from '../views/Dashboard';
 import Purchase from '../views/Purchase';
 import MainLayout from '../layouts/MainLayout';
+import Products from '../views/Products';
+
 const AppRouter: React.FC = () => {
   return (
     <Router>
@@ -12,6 +14,7 @@ const AppRouter: React.FC = () => {
             <Route path="/" Component={ MainLayout }>
                 <Route path="/tablero" Component={Dashboard} />
                 <Route path="/compras" Component={Purchase} />
+                <Route path="/productos" Component={Products} />
             </Route>
         </Routes>
     </Router>

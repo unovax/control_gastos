@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input {
+  @apply border border-gray-700 rounded-md w-full px-2 py-1;
+}
+label {
+  @apply block mb-1;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+    animation: slide-in 0.3s ease-out;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+  }
+  
+  .modal-enter {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  
+  .modal-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .modal-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .modal-exit-active {
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
