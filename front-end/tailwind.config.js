@@ -8,8 +8,24 @@ export default {
     extend: {
       colors:{
         'primary': {
-          'DEFAULT': '#F2C94C',
-          'text': '#000000',
+          'DEFAULT': '#2A153D',
+          'text': '#FFFFFF',
+          'hover': {
+            'DEFAULT': '#20102E',
+            'text': '#FFFFFF',
+          },
+          'light': '#FFFFFF',
+          'dark': '#C4C4C4',
+          'darker': '#828282',
+          'darkest': '#333333',
+        },
+        'danger': {
+          'DEFAULT': '#551117',
+          'text': '#FFFFFF',
+          'hover': {
+            'DEFAULT': '#440D12',
+            'text': '#FFFFFF',
+          },
           'light': '#FFFFFF',
           'dark': '#C4C4C4',
           'darker': '#828282',

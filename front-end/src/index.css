@@ -2,11 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-input {
+input, textarea {
   @apply border border-gray-700 rounded-md w-full px-2 py-1;
 }
 label {
   @apply block mb-1;
+}
+
+svg {
+  @apply w-6 h-6;
+}
+
+.icon__pointer {
+  @apply cursor-pointer hover:scale-110;
+}
+
+.content__container {
+  @apply overflow-auto flex-1 p-2;
+}
+
+table {
+  @apply w-full shadow-md;
+}
+
+th {
+  @apply bg-primary text-white px-2 py-1;
+}
+
+td {
+  @apply px-2;
+}
+
+tbody tr {
+  @apply odd:bg-gray-100;
+}
+
+.flex__container {
+  @apply flex items-center space-x-2;
+}
+
+.flex__container__center {
+  @apply flex__container justify-center;
+}
+
+.flex__container__between {
+  @apply flex__container justify-between;
+}
+
+.flex__container__end {
+  @apply flex__container justify-end;
 }
 
 .modal-overlay {

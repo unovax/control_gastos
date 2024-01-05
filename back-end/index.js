@@ -5,7 +5,6 @@ import apiRoutes from './routes/index.js';
 import { PORT, mongoDBURL, mongoDBName } from './config.js';
 import { connectToDatabase } from './database.js';
 
-
 connectToDatabase(mongoDBURL + mongoDBName);
 
 const app = express();
